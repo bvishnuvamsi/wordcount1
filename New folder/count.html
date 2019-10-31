@@ -1,0 +1,15 @@
+
+ <h1> there are {{ count}} words in the text you entered :</h1>
+<a href="{% url 'home'%}"> back </a>
+
+ <h1> text you entered is  :</h1>
+ {{ fulltext }}
+
+
+  <h1> WORD COUNT : :</h1>
+
+ {%  for word,count1 in sort %}
+ {{ word}} - {{count1}}
+
+ <br />
+ {% endfor %}

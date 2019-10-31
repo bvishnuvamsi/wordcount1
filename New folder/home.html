@@ -1,0 +1,13 @@
+#This is my first home page!
+
+<h1> WORD COUNT</h1>
+
+#{{hithere}}   #to write some python code
+
+<form action="{% url 'count' %}">
+    <textarea cols="75" rows="25" name="fulltext"></textarea>
+    <br />
+    <input  type="Submit" value="count!" />
+</form>
+
+<a href="{% url 'about'%}"> about </a>
